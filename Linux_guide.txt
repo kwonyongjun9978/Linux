@@ -39,8 +39,17 @@ man rm
 man mkdir
 man pwd 
 
-파일편집 : nano,vi
+nano, vi //파일편집 
 
-패키지매니저 : apt
-최신 상태의 패키지 목록 다운로드(소프트웨어x) : apt-get update;
-현재 실행중인 프로그램 목록을 보여준다 : top
+apt //패키지매니저(앱스토어비슷한 의미)
+#apt-get update; //최신 상태의 패키지 목록으로 갱신
+#apt-cache search 패키지 //설치하고 싶은 패키지 검색
+#apt-get install 패키지 //패키지 다운로드
+top, htop //현재 실행중인 프로그램 목록을 보여주는 패키지 
+#apt-get upgrade 패키지 //패키지 업그레이드
+#apt-get upgrade //apt-get을 통해서 다운받은 모든 패키지들을 최신버전으로 업그레이드
+#apt-get remove 패키지 //패키지 삭제
+
+wget -O 저장하고싶은파일의이름 url주소 //wget이라는 프로그램을 통해서 파일,이미지를 다운로드해서 원하는 이름으로 저장
+
+git clone 오픈소스다운로드주소 디렉토리이름 //git이라는 프로그램을 통해서 github에 있는 오픈소스를 원하는 디렉토리에 다운로드 받기
