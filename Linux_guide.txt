@@ -63,3 +63,17 @@ ex)grep linux linux.txt
 ls --help | grep sort //ls명령어 도움말에서 sort라는 단어 검색(파이프라인)
 
 ps aux //현재 실행되고있는 프로그램 리스트 출력
+
+>(Redirection)
+ls -l > result.txt //result.txt라는 파일안에 ls -l의 내용이 저장된다.
+rm linux.txt 1> result.txt 2> error.log //standard output이면 result.txt에 저장되고 standard error이면 error.log에 저장된다.
+										//standard input은 rm linux.txt
+										ls -al >> result.txt
+ls -al >> result.txt //reuslt.txt에 있는 원래 파일내용에 ls -al의 내용이 추가된다.
+
+shell vs kernel
+shell(bash,zsh)에서 사용자가 입력한 명령어들을 해석해서 kernel에 전달
+kernel이라고 하는 프로그램은 하드웨어를 직접적으로 제어하는 운영체제에서 가장 중심이되는 코어 역할
+
+echo "hello" //hello라는 문자를 화면에 출력
+echo $0 //현제 어떤 shell을 쓰는지 알려줌
