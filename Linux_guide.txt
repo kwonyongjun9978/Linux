@@ -68,7 +68,6 @@ ps aux //현재 실행되고있는 프로그램 리스트 출력
 ls -l > result.txt //result.txt라는 파일안에 ls -l의 내용이 저장된다.
 rm linux.txt 1> result.txt 2> error.log //standard output이면 result.txt에 저장되고 standard error이면 error.log에 저장된다.
 										//standard input은 rm linux.txt
-										ls -al >> result.txt
 ls -al >> result.txt //reuslt.txt에 있는 원래 파일내용에 ls -al의 내용이 추가된다.
 
 shell vs kernel
