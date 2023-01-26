@@ -171,3 +171,22 @@ r:4, w:2, x:1
 chmod 773 perm.txt //-rwxrwx-wx 1 kwon kwon 0  1월 25 22:20 perm.txt
 chmod a+r perm.txt //owner,group,other에게 perm.txt의 read 권한을 부여
 chmod a=rwx perm.txt //owner,group,other에게 perm.txt의 read,write,excute 권한을 부여
+
+sudo groupadd group이름 //group추가
+/etc/group //group에대한 정보를 가지고 있는 파일
+sudo usermod -a -G group이름 user이름 //group의 맴버로 만들기
+sudo chown 현재group이름:변경할group이름 . //현재 디렉토리의 group을 변경
+chmod g+w . //group의 현재디렉토리에 대한 write권한 부여
+==========================================================================================================================================================================================================================
+google서버에 접속하기
+1. 리눅스에서 ping google.com 입력후 아이피주소를 통해서 접속
+2. 웹브라우저에서 domain name(google.com)으로 접속 //domain name(google.com)을 입력하면 DNS server로 이동하여 해당 domain에 대한 ip주소를 받아 접속하게 된다.
+
+자신의 ip주소 확인
+1. 리눅스에서 ip addr 입력 
+->private ip address
+2. 리눅스에서 curl ipinfo.io/ip 입력
+   웹브라우저에서 https://ipinfo.io/ip 입력
+->public ip address
+==========================================================================================================================================================================================================================
+Web server를 리눅스에 설치
