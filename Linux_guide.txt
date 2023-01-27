@@ -125,8 +125,8 @@ kill 실행중인프로그램 //실행중인 프로그램을 끈다.
 Daemon : 백그라운드로 실행되는 서비스 프로그램	
 /etc/init.d/ : daemon프로그램들이 위치하는 디렉토리
 
-service apache2 start //apache2프로그램 실행
-service apache2 stop //apache2프로그램 멈춤
+#service apache2 start //apache2프로그램 실행
+#service apache2 stop //apache2프로그램 멈춤
 ========================================================================================================================================================================================================================== 
 cron : 특정 시간 마다 어떤 작업을 자동으로 수행하게 해주고 싶을 때 사용하는 명령어
 m(inute)  h(our)  dom(day of month)  mon(th)  dow(day of weekend)  command
@@ -189,4 +189,8 @@ google서버에 접속하기
    웹브라우저에서 https://ipinfo.io/ip 입력
 ->public ip address
 ==========================================================================================================================================================================================================================
-Web server를 리눅스에 설치
+Web server(apache2)
+elinks http://private ip address/ //shell에서 직접 자신의web server에 접속하기
+private ip address : localhost(domain name) = 127.0.0.1, 10.0.2.15/24 
+nano /etc/apache2/sites-enabled/000-default.conf -> /var/www/html(=DocumentRoot) -> index.html
+													/var/log/apache2 -> access.logs
