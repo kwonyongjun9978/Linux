@@ -191,7 +191,7 @@ Web server(apache2)
 elinks http://private ip address/ //shell에서 직접 자신의web server에 접속하기
 private ip address, localhost(domain name) = 127.0.0.1, 10.0.2.15/24 
 nano /etc/apache2/sites-enabled/000-default.conf -> /var/www/html(=DocumentRoot) -> index.html
-						/var/log/apache2 -> access.log
+						  /var/log/apache2 -> access.log
 ==========================================================================================================================================================================================================================
 SSH(원격제어)
 ssh 원격제어 하고자 하는 사용자 컴퓨터 이름(kwon)@ip주소(127.0.0.1) //원격으로 원격제어 하고자 하는 컴퓨터에 접속
